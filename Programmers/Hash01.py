@@ -8,5 +8,5 @@ def solution(participant, completion):
         if participant[i] != completion[i]:
             return participant[i]
     
-    #반복문 다 돌렸을때까지 이름순서가 같다면
+    #반복문 다 돌렸을때까지 이름순서가 같다면,,
     return participant[i+1]
