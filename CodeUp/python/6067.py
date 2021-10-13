@@ -12,6 +12,19 @@
 양수이면서 홀수이면, D
 를 출력한다.
 
+
+다른풀이
+
+a = int(input())
+if a<0 and (a%2 == 0):
+    print("A")
+elif a<0 and (a%2 != 0):
+    print("B")
+elif a>0 and (a%2 == 0):
+    print("C")
+else:
+    print("D")
+
 """
 
 a = int(input())
