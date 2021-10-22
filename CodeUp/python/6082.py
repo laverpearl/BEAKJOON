@@ -16,7 +16,18 @@ print(a, end=' ') -> 출력 후 공백문자(빈칸, ' ')로 끝낸다
 
 a = int(input())
 for i in range(1, a+1):
-    if i % 3 != 0:
-        print(i, end=' ')
+    if i <= 10:
+        if i % 3 == 0:
+            print('X', end=' ')
+        else:
+            print(i, end=' ')
+    elif i <= 20:
+        if (i-10) % 3 == 0:
+            print('X', end=' ')
+        else:
+            print(i, end=' ')
     else:
-        print('X', end=' ')
+        if (i-20) % 3 == 0:
+            print('X', end=' ')
+        else:
+            print(i, end=' ')
