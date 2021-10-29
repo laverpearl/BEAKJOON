@@ -18,20 +18,17 @@
 출력
 첫째 줄에 최댓값을 출력하고, 둘째 줄에 최댓값이 몇 번째 수인지를 출력한다.
 
+
+참고 
+max()
+list이름.index()
 """
 
-a = []
-b = 0
-while True:
-    try:
-        a.append(int(input())) #들어간 숫자는 9개 / 0,1,2,3,4,5,6,7,8
-    except:
-        break
-max = a[0] 
-for i in range(1, len(a)): # len(a) = 9 / 1,2,3,4,5,6,7,8
-    if max < a[i]:
-        max = a[i]
-        b = i+1
-print(max)
-print(b)
+
+num_list = []
+for num in range(9):
+    num_list.append(int(input()))
+print(max(num_list))
+print(num_list.index(max(num_list))+1)
+
 
