@@ -30,11 +30,11 @@ C의 단위는 센트이다. (1달러 = 100센트) (1<=C<=500)
 
 
 n = int(input())
-array = [0.25, 0.10, 0.05, 0.01]
+array = [25, 10, 5, 1]
 count = []
 
 for i in range(n):
-    c = int(input())/100
+    c = int(input())
     for money in array:
         count.append(int(c // money))
         c %= money
